@@ -24,6 +24,7 @@ scisr = """
                   (____)
             ---.__(___)
             """
+#Verifing Your input
 if q1==0:
     print(rock)
 elif q1== 1:
@@ -31,6 +32,7 @@ elif q1== 1:
 else:
     print(scisr)
 
+#Computer Turn
 import random
 
 a=(random.randrange(0,3))
@@ -41,7 +43,13 @@ elif a== 1:
     print(paper)
 else:
     print(scisr)
-if q1==a:
-    print("You won the game")
+
+#Logic
+if q1==0 and a== 2:
+    print("You won this game, Computer Lose this game")
+elif q1==2 and a== 1:
+    print("You won this game, Computer Lose this game")
+elif q1==1 and a== 0:
+    print("You won this game, Computer Lose this game")
 else:
-    print("Good luck for next the time")
+    print("Good luck for next the time, Computer Won this game")
